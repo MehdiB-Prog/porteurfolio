@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Effet 3D sur tout le site selon le scroll */
+body {
+  transform-style: preserve-3d;
+  transition: transform 0.1s linear;
+  will-change: transform;
+}
+
+.rotate-effect {
+  transform: perspective(1200px) rotateY(var(--rotateY));
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.logo {
+  color: #4cc3ff;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #4cc3ff;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#bgCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.title {
+  font-size: 70px;
+  font-weight: bold;
+  color: #6bccff;
+  text-shadow: 0 0 15px #6bccff;
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: 30px;
+  text-shadow: 0 0 10px #4cc3ff;
+}
+
+.subtext {
+  margin-top: 10px;
+  font-size: 20px;
+  opacity: 0.9;
+}
+/* ----- SECTION A PROPOS ----- */
+.btn-pdf {
+  display: inline-block;
+  padding: 12px 20px;
+  background: cyan;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-pdf:hover {
+  background: white;
+  box-shadow: 0 0 20px cyan;
+}
+
+.about {
+  padding: 80px 10%;
+  background: #0c0f1a;
+  color: white;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1 1 450px;
+}
+
+.about-text h2 {
+  font-size: 2.4em;
+  margin-bottom: 20px;
+  color: cyan;
+}
+
+.about-text p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.about-infos {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.about-infos li {
+  margin-bottom: 8px;
+  font-size: 1.1em;
+}
+
+.about-img {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-img img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 3px solid cyan;
+  box-shadow: 0 0 20px cyan;
+  transition: 0.3s;
+}
+
+.about-img img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px cyan;
+}
+/* ----- EXTRA ABOUT (Pourquoi le BTS / Stage) ----- */
+.about-extra {
+  margin-top: 40px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+.about-extra h3 {
+  font-size: 1.7em;
+  color: cyan;
+  margin-bottom: 15px;
+}
+
+.about-extra p {
+  margin-bottom: 12px;
+  line-height: 1.7;
+  font-size: 1.1em;
+}
+
+.about-extra ul {
+  margin: 10px 0 20px 20px;
+  line-height: 1.6;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+/* ----- SECTION VEILLE TECHNOLOGIQUE ----- */
+.veille {
+  padding: 80px 10%;
+  background: #0b0f1c;
+  color: white;
+}
+
+.veille-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.veille-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);
+  line-height: 1.7;
+  font-size: 1.1em;
+  transition: 0.3s;
+}
+
+.veille-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px cyan;
+}
+
+.veille-card h3 {
+  color: cyan;
+  margin-bottom: 15px;
+  font-size: 1.6em;
+}
+
+/* ----- SECTION COMPÉTENCES ----- */
+.skills {
+  padding: 80px 10%;
+  background: #0a0d18;
+  color: white;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.3em;
+  margin-bottom: 50px;
+  color: cyan;
+  text-shadow: 0 0 10px cyan;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.skill-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+  transition: 0.3s;
+}
+
+.skill-box:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 25px cyan;
+}
+
+.skill-box h3 {
+  margin-bottom: 12px;
+  font-size: 1.3em;
+  color: cyan;
+}
+
+/* Barre de progression */
+.skill-bar {
+  width: 100%;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-bar span {
+  display: block;
+  height: 100%;
+  background: cyan;
+  box-shadow: 0 0 15px cyan;
+  border-radius: 5px;
+  animation: grow 1.6s ease-out;
+}
+
+@keyframes grow {
+  from { width: 0; }
+}
+
+/* Animation Scroll Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* ----- SECTION PROJETS ----- */
+.projects {
+  padding: 80px 10%;
+  background: #0f1322;
+  color: white;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.project-card {
+  display: block;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.15);
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 0 25px cyan;
+}
+
+.project-img {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-card h3 {
+  font-size: 1.4em;
+  padding: 15px 20px 5px;
+  color: cyan;
+}
+
+.project-card p {
+  padding: 0 20px 20px;
+  font-size: 0.95em;
+  opacity: 0.85;
+}
+
+#bgCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;          /* reste derrière tout */
+  pointer-events: none; /* la souris passe à travers */
+}
+.reveal {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
