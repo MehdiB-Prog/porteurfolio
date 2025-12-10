@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Mehdi Boumoud</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <canvas id="bgCanvas"></canvas>
+
+
+  <!-- HEADER -->
+  <header class="navbar">
+    <h1 class="logo">M.B</h1>
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#propos">À propos</a></li>
+        <li><a href="#tableau">Tableau de Synthèse</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="accueil" class="hero reveal">
+    <canvas id="bgCanvas"></canvas>
+
+    <div class="hero-content">
+      <h1 class="title">Mehdi Boumoud</h1>
+      <h2 class="subtitle">Bienvenue sur mon Portfolio</h2>
+      <p class="subtext">Étudiant en BTS SIO • Option SLAM</p>
+    </div>
+  </section>
+  <!-- A PROPOS -->
+<section id="propos" class="about reveal">
+  <div class="about-container">
+
+    <div class="about-text">
+      <h2>À propos de moi</h2>
+      <p>
+        Je m'appelle <strong>Mehdi Boumoud</strong>, étudiant en 
+        <strong>BTS SIO option SLAM</strong>. Passionné par le 
+        développement informatique, j’aime concevoir des applications, 
+        créer des interfaces modernes et apprendre en continu.
+      </p>
+
+      <p>
+        Mon objectif est de devenir développeur full-stack en maîtrisant 
+        les technologies du web tout en travaillant sur des projets réels 
+        afin d'améliorer mes compétences.
+      </p>
+
+      <ul class="about-infos">
+        <li><strong>Âge :</strong> 19 ans</li>
+        <li><strong>Formation :</strong> BTS SIO SLAM</li>
+        <li><strong>Localisation :</strong> France</li>
+      </ul>
+    </div>
+    <div class="about-extra reveal">
+
+  <h3>Pourquoi le BTS SIO option SLAM ?</h3>
+  <p>
+    J’ai choisi le <strong>BTS SIO option SLAM</strong> car je suis passionné par le 
+    développement d’applications et la création de solutions numériques.  
+    J’aime comprendre comment fonctionne un programme, résoudre des problèmes
+    et concevoir des interfaces modernes et intuitives.
+  </p>
+
+  <p>
+    L’option <strong>SLAM</strong> me permet d’apprendre à créer des sites web, des applications,
+    gérer des bases de données et développer des projets concrets, ce qui correspond
+    parfaitement à mes objectifs professionnels : devenir développeur full-stack.
+  </p>
+
+  <h3>Mon stage de 1ère année</h3>
+  <p>
+    J’ai réalisé mon premier stage dans l’entreprise <strong>[Nom de l’entreprise]</strong>,
+    où j’ai pu découvrir le monde professionnel du développement.
+  </p>
+
+  <p>
+    Durant ce stage, j’ai travaillé sur :
+  </p>
+
+  <ul>
+    <li>• La création / amélioration d’un site web</li>
+    <li>• L’ajout de fonctionnalités en HTML, CSS et JavaScript</li>
+    <li>• L’utilisation d’outils professionnels (Git, PHP, SQL…)</li>
+    <li>• L’assistance technique et la résolution de bugs</li>
+  </ul>
+
+  <p>
+    Ce stage m’a permis de renforcer mes compétences, de comprendre le travail en équipe
+    et de confirmer mon envie de poursuivre dans le développement.
+  </p>
+
+</div>
+
+
+  </div>
+</section>
+<!-- VEILLE TECHNOLOGIQUE -->
+<section id="veille" class="veille reveal">
+  <h2 class="section-title">Veille Technologique</h2>
+
+  <div class="veille-container">
+
+    <div class="veille-card">
+      <h3>L’IA Générative</h3>
+      <p>
+        Ma veille technologique porte actuellement sur 
+        <strong>l’Intelligence Artificielle générative</strong>, une technologie
+        qui permet de créer du texte, des images, du code ou encore du son.
+      </p>
+
+      <p>
+        Cette évolution transforme le développement informatique en
+        facilitant l’automatisation, la création rapide de prototypes,
+        l’assistance au codage ou encore l’amélioration de l’expérience utilisateur.
+      </p>
+
+      <p>
+        Je suis cette technologie à travers des sources comme :  
+        <br>• Google Actualités  
+        <br>• YouTube (chaînes tech)  
+        <br>• Le site OpenAI  
+        <br>• Articles de ZDNet et Journal du Geek
+      </p>
+
+      <p>
+        L’objectif est de comprendre comment ces outils peuvent aider dans
+        mes futurs projets professionnels et personnels.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Tableau de synthese -->
+<section id="tableau" class="about reveal">
+  <div class="about-container" style="flex-direction: column; text-align: center; gap: 30px;">
+
+    <h2 style="color: cyan;">Tableau de Synthèse</h2>
+
+    <!-- Bouton pour ouvrir le PDF -->
+    <a href="file:///C:/Users/boumo/Downloads/BTS_SIO_Tableau_De_Synthese.pdf" target="_blank" class="btn-pdf">
+      📄 Ouvrir le tableau en PDF
+    </a>
+
+    <!-- Aperçu dans la page -->
+    <embed 
+      src="file:///C:/Users/boumo/Downloads/BTS_SIO_Tableau_De_Synthese.pdf" 
+      type="application/pdf" 
+      width="100%" 
+      height="600px" 
+      style="border: 3px solid cyan; border-radius: 15px; box-shadow: 0 0 20px cyan;">
+  </div>
+</section>
+
+
+<!-- COMPÉTENCES -->
+<section id="competences" class="skills reveal">
+  <h2 class="section-title">Compétences</h2>
+
+  <div class="skills-container">
+
+    <div class="skill-box">
+      <h3>HTML</h3>
+      <div class="skill-bar"><span style="width: 90%"></span></div>
+    </div>
+
+    <div class="skill-box">
+      <h3>CSS</h3>
+      <div class="skill-bar"><span style="width: 85%"></span></div>
+    </div>
+
+    <div class="skill-box">
+      <h3>Java</h3>
+      <div class="skill-bar"><span style="width: 70%"></span></div>
+    </div>
+
+    <div class="skill-box">
+      <h3>C#</h3>
+      <div class="skill-bar"><span style="width: 65%"></span></div>
+    </div>
+
+    <div class="skill-box">
+      <h3>Python</h3>
+      <div class="skill-bar"><span style="width: 60%"></span></div>
+    </div>
+
+    <div class="skill-box">
+      <h3>SQL</h3>
+      <div class="skill-bar"><span style="width: 75%"></span></div>
+    </div>
+
+  </div>
+</section>
+<!-- PROJETS -->
+<section id="projets" class="projects reveal">
+  <h2 class="section-title">Mes Projets</h2>
+
+  <div class="projects-container">
+
+    <!-- Projet 1 -->
+    <a href="projet1.html" class="project-card">
+      <div class="project-img" style="background-image: url('img/projet1.jpg');"></div>
+      <h3>Projet 1 — Application Java</h3>
+      <p>Gestion d'utilisateur en Java avec interface graphique.</p>
+    </a>
+
+    <!-- Projet 2 -->
+    <a href="file:///C:/Users/boumo/OneDrive/Bureau/SO%20ch/index.html" class="project-card">
+      <div class="project-img" style="background-image: url('img/projet2.jpg');"></div>
+      <h3>Projet 2 — Site Web HTML/CSS</h3>
+      <p>Création d’un site vitrine moderne responsive.</p>
+    
+    </a>
+
+    <!-- Projet 3 -->
+    <a href="projet3.html" class="project-card">
+      <div class="project-img" style="background-image: url('img/projet3.jpg');"></div>
+      <h3>Projet 3 — Base de données SQL</h3>
+      <p>Modélisation + requêtes SQL avancées.</p>
+    </a>
+
+  </div>
+</section>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
